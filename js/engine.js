@@ -21,7 +21,7 @@ function computer_move() {
   return play_machine; /*show what the machine has played behind play_machine which is behind Machine:, see HTML*/
 }
 
-function compare(you, machine) {
+function compare(you, machine) { /*computer knows what needs to be compared as above it shows compare(play_you, play_machine)- assigns you to play_you and machine to play_machine*/
   var verdict = 'lose'; /* you lose unless you draw or win*/
 
   if (you == machine) {
@@ -44,9 +44,9 @@ function compare(you, machine) {
       $("#game_won").text(won); /*if you win, show this*/
       break;
 
-    case 'lose':
-      lost++;
-      $("#game_lost").text(lost);
+    case 'lose': /* if the verdict is lose*/
+      lost++; /*add one to lost*/
+      $("#game_lost").text(lost); /*show this behind lost*/
       break;
 
     case 'draw':
@@ -55,7 +55,7 @@ function compare(you, machine) {
       break;
   }
 
-  $("#verdict").text(verdict);
+  $("#verdict").text(verdict); /*also show whether won, lost or draw*/
 
   played++; /*add one to this variable*/
   $("#game_played").text(played);
