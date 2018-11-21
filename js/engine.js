@@ -5,10 +5,10 @@ var won = 0;
 var lost = 0;
 var draw = 0;
 
-
 /*listen for the button clicks, doesn't matter which button */
 $("button").click(function(event) {
   var play_you = this.getAttribute("value"); /* bc of "this" computer knows which button has been clicked, could be rock, paper or scissors*/
+
   $("#play_you").text(play_you); /*shows what you choose*/
   var play_machine = computer_move(); /*assigns play_machine to whatever the computer did - look at function below */
   compare(play_you, play_machine);
@@ -21,7 +21,7 @@ function computer_move() {
   return play_machine; /*show what the machine has played behind play_machine which is behind Machine:, see HTML*/
 }
 
-function compare(you, machine) { /*computer knows what needs to be compared as above it shows compare(play_you, play_machine)- assigns you to play_you and machine to play_machine*/
+function compare(you, machine) { /*computer knows what needs to be compared as above it shows compare(play_you, play_machine)- assigns you to play_you and machine to play_machine important that "compare" is the same.*/
   var verdict = 'lose'; /* you lose unless you draw or win*/
 
   if (you == machine) {
