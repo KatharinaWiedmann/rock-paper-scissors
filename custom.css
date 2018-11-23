@@ -1,23 +1,9 @@
-h1 {
-  color: green;
-}
-
-.container {
-  padding-top: 70px;
-}
-
-button:hover {
+button {
   background-color: red;
 }
 
-#game_won {
-  color: green;
-}
-
-#game_lost {
-  color: red;
-}
-
-#game_draw {
-  color: blue;
+button:focus {
+  background-color: blue;
+  border-color: orange;
+  box-shadow: 0 0 40px orange;
 }
