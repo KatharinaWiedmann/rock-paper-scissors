@@ -55,7 +55,9 @@ function compare(you, machine) { /*computer knows what needs to be compared as a
       break;
   }
 
-  $("#verdict").text(verdict); /*also show whether won, lost or draw*/
+  $("#verdict").text(verdict);
+   /*also show whether won, lost or draw*/
+
 
   played++; /*add one to this variable*/
   $("#game_played").text(played);
