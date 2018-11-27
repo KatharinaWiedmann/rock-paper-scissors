@@ -8,6 +8,9 @@ var draw = 0;
 /*listen for the button clicks, doesn't matter which button */
 $("button").click(function(event) {
   var play_you = this.getAttribute("value"); /* bc of "this" computer knows which button has been clicked, could be rock, paper or scissors*/
+$('button').css('background-color','black');
+$(this).css('background-color','white');
+
 
   $("#play_you").text(play_you); /*shows what you choose*/
   var play_machine = computer_move(); /*assigns play_machine to whatever the computer did - look at function below */

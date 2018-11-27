@@ -36,14 +36,15 @@ h1 {
 /* BUTTONS */
 button {
   background-color: black;
-  border-color: white;
+  border-color: black;
 }
+
 
 button:focus {
   background-color: white;
   border-color: white;
   box-shadow: 0 0 40px white;
-}
+} 
 
 #current_move {
   color: white;
